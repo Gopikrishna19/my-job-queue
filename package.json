@@ -5,5 +5,8 @@
   "main": "index.js",
   "repository": "Gopikrishna19/my-job-queue",
   "author": "Gopikrishna Sathyamurthy",
-  "license": "GPL-3.0"
+  "license": "GPL-3.0",
+  "scripts": {
+    "start": "node index.js"
+  }
 }
