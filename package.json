@@ -1,6 +1,6 @@
 {
   "name": "my-job-queue",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "My Job Queue",
   "main": "index.js",
   "repository": "Gopikrishna19/my-job-queue",
