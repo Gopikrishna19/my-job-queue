@@ -7,8 +7,10 @@
   "author": "Gopikrishna Sathyamurthy",
   "license": "GPL-3.0",
   "scripts": {
-    "docker:deploy": "sh ./docker/deploy.sh",
+    "docker:image": "sh ./docker/image.sh",
+    "docker:container": "sh ./docker/container.sh",
     "docker:publish": "sh ./docker/publish.sh",
+    "postversion": "npm run docker:image && npm run docker:publish",
     "start": "node server"
   },
   "dependencies": {

@@ -1,7 +1,13 @@
 #!/bin/bash
 
-image=my-job-queue
 repo=gopikrishna19
+image=my-job-queue
 
-docker tag $image $repo/$image:$1
-docker push $repo/$image:$1
+version=v$(node -e 'console.log(require("./package.json").version)')
+
+echo Publishing image $version
+
+docker tag $repo/$image $repo/$image:$version
+docker tag $repo/$image $repo/$image:latest
+docker push $repo/$image:$version
+docker push $repo/$image:latest
